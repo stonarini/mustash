@@ -1,0 +1,14 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mustash_core = { path = "../mustash_core" }
+cli_macros = { path = "../../cli_macros" }
+clap = { version = "4.2.1", features = ["derive"] }
+
+[features]
+default = ["dispatcher"]
+dispatcher = []
+

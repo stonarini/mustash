@@ -1,6 +1,15 @@
-[package]
-name = "mustash"
+[workspace]
+resolver = "3"
+members = [
+  "crates/mustash_core",
+  "crates/cli",
+  "mustash_macros",
+  "cli_macros",
+  ]
+
+[workspace.package]
 version = "0.1.0"
 edition = "2024"
 
-[dependencies]
+[workspace.dependencies]
+mustash_core = { path = "crates/mustash_core" }
